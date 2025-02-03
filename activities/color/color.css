@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(100, 250, 174);
+}
+.underline{
+    text-decoration: underline;
+}
+
+.itallic{
+    font-size: italic;
+}
+
+
+footer p {
+    color: #FF0000; 
+}
+
+
+#firstpar {
+    color:aquamarine;
+}
+
+
+.blue{
+    color: blue;
+}
+
+.bigger{
+    font-size: 18pt;
+}
