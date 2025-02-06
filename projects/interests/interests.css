@@ -1,0 +1,56 @@
+body {
+    font-family: Helvetica;
+    background-color: rgb(2, 83, 43);
+}
+
+.purple{
+    color: purple;
+}
+
+
+
+#title { 
+    font-family: Papyrus;
+    color: rgb(253, 116, 4);
+}
+
+.pink{
+    color: rgb(248, 35, 142);
+}
+
+
+.underline {
+    text-decoration: underline;
+    color: yellowgreen;
+    font-family:lucida Sans;
+}
+
+.color2 {
+    color: rgb(6, 247, 227);
+    font-family: Comic Sans MS;
+}
+
+.blue{
+    color: blue
+}
+
+
+.block{
+    background-color: black;
+    color: orangered;
+    width: 1000px;
+    height: 75px;
+}
+
+.red{
+    color: red;
+    font-family: American Typewriter;
+    font-size: 15pt;
+}
+
+.block2{
+    background-color: black;
+    color:orangered;
+    width:1000px;
+    height: 20px;
+}
