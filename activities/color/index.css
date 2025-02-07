@@ -1,0 +1,30 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.lake{
+    width: 500px;
+    height: 246 px;
+}
+
+.color{
+    font-family: Cursive;
+    color: blueviolet;
+
+}
+
+.question{
+    font-family: Serif;
+    font-size: large;
+    color: rgb(37, 15, 231)
+}
+
+.answer{
+    font-family: Helvetica;
+    font-size: smaller;
+    color: rgb(9, 73, 9)
+}
+
+.color2 {
+    color: rgb(180, 9, 137)
+}
