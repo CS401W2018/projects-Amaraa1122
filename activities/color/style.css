@@ -1,0 +1,30 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+/*background-color: blue;  */
+  /*  background-image: url('blue.jpg') ;   */
+ /*  background: url('blue.jpg') rgb(90, 90, 144); */
+    background: url('blue.jpg') rgb(232, 232, 238);
+    
+  /*  background-repeat: no-repeat;   */
+    background-position: bottom right;
+    /*background : url('back.jpg') top right no repeat; */
+
+}
+
+
+header{
+    background-image: url('back.jpg');
+    background:url('sak2.png') top left no repeat;
+}
+
+.color{
+    font-family: Papyrus;
+    font-size: 16pt; 
+    color: rgb(192, 89, 89)
+}
+
+.answer{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(45, 78, 7);
+    font-size: 14pt;
+}
