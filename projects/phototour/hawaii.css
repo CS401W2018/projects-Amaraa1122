@@ -1,0 +1,55 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    
+    background: url('leaf.jpg'); 
+   
+}
+
+.corner{
+    
+    position: absolute;
+    right: 0px;
+}
+
+.title {
+    color: yellowgreen;
+    font-family: Pyparus;
+}
+
+.subtitle{
+    color: white;
+    font-family:Times New Roman;
+}
+
+
+
+
+.wel{
+    color: rgb(171, 171, 238);
+    font-family: Lucida Handwriting;
+    font-size: 20pt;
+}
+.place{
+    color: rgb(243, 241, 241);
+    font-size: 15pt;
+    list-style-image: url(shak.jpg);
+}
+.sen{
+    color: rgb(243, 104, 11);
+    font-size: 20pt;
+}
+.block{
+    background-color:burlywood;
+
+}
+.exp{
+    color :rgb(10, 192, 137);
+    font-size: 18pt;
+}
+
+
+.purple{
+    color: rgb(252, 22, 252)
+}
+
+
