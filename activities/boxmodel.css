@@ -1,0 +1,37 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-color: rgb(35, 110, 35);
+    background: url(ocean.jpg);
+    font-size: 13pt;
+}
+
+header{
+    background-color: rgb(199, 167, 207);
+    padding: 25px;
+    margin: 30px;
+    width: 80%;
+    height: 2cm;
+    overflow:scroll;
+}
+
+header h1{
+   /* border:thin solid #000; */
+    border: 5px dotted #000;
+}
+
+.answers{
+    font-family: Georgia;
+    font-size: 13pt;
+    color: rgb(63, 253, 16);
+}
+
+.boxa{
+    color: rgb(201, 46, 46);
+    font-size: 16pt;
+    font-family: Arial;
+    
+}
+
+.foot{
+    background-color: rgb(228, 135, 23);
+}
