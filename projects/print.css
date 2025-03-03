@@ -1,0 +1,67 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+    background-color:rgb(253, 210, 154);
+    margin: 0;
+     
+}
+
+header{
+    background-color: rgb(200, 155, 236);
+}
+
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(4, 255, 255, 0.959);
+}
+ 
+nav a {
+    display: block;
+    padding: 10px;
+    background-color: rgb(240, 138, 240);
+    color: white;
+    text-decoration: none;
+}
+
+
+nav a:hover{
+    color: green;
+    text-decoration: underline;
+    background-color: rgb(215, 235, 40);
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+main {
+    display: flex;
+}
+
+
+.card{
+    border: thin solid #000;
+    box-shadow: 3px 3px 3px rgb(70, 64, 64);
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+}
+
+
+.card figure{
+    margin: 0;
+}
+
+.card img{
+    width: 100%;
+}
+
