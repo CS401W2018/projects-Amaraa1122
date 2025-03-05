@@ -1,7 +1,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     color: green;
-    background-color:rgb(253, 210, 154);
+    background-color:rgba(235, 155, 51, 0.781);
     margin: 0;
      
 }
@@ -13,20 +13,22 @@ header{
 
 header h1 {
     margin: 0;
+    background-color: rgb(170, 79, 255);
 }
 
 nav {
     display: flex;
     justify-content: space-evenly;
-    background-color: rgba(4, 255, 255, 0.959);
+    background-color: rgba(32, 119, 21, 0.959);
 }
  
 nav a {
     display: block;
     padding: 10px;
-    background-color: rgb(240, 138, 240);
-    color: white;
+    background-color:rgb(235, 154, 50);
+    color: rgb(95, 15, 15);
     text-decoration: none;
+    border-radius: thin solid #FFF;
 }
 
 
@@ -65,5 +67,42 @@ main {
 .card img{
     width: 100%;
 }
+
+@media only screen AND (max-width: 1000px){
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 20px;
+        width: 90%;
+    }
+
+    .feature {
+        order: -1;
+    }
+}
  
+
+@media only screen AND (max-width: 700px){
+   /* header {
+        background-color: #000;
+    }  */
+
+    nav {
+        flex-direction: column; 
+       /* border-radius: thin solid #FFF; */
+    }
+    
+}
+
+
+.enga {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    color:rgb(95, 15, 15);
+
+}
+
 
