@@ -1,0 +1,72 @@
+/* Printer-Friendly View */
+@media print {
+    /* Hide navigation and footer */
+    nav, footer {
+        display: none;
+    }
+
+    /* Ensure the main content takes full width */
+    .orga {
+        display: block;
+        width: 100%;
+    }
+
+    /* Hide sidebar */
+    .left {
+        display: none;
+    }
+
+    /* Expand the right content to fill the page */
+    .right {
+        width: 100%;
+    }
+
+    /* Ensure articles take full width */
+    .parent {
+        width: 100%;
+    }
+
+    .child {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    /* Remove background color for better printing */
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    /* Ensure text is readable and images are adjusted */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+/*@media print {
+    nav, footer {
+        display: none;
+    }
+    
+    .left {
+        display: none;
+    }
+    
+    .right {
+        width: 100%;
+    }
+    
+    .parent {
+        width: 100%;
+    }
+    
+    .child {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}  */
+
