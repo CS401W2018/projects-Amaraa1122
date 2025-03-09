@@ -1,9 +1,12 @@
 /* Printer-Friendly View */
 @media print {
     /* Hide navigation and footer */
-    nav, footer {
+    h1 {
         display: none;
     }
+    /*nav, footer {
+        display: none;
+    } */
 
     /* Ensure the main content takes full width */
     .orga {

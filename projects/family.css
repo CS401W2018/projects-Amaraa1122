@@ -1,10 +1,10 @@
-body{
+body {
     font-family: papyrus;
     background-color: rgba(245, 48, 48, 0.74);
 }
 
 
-nav{
+nav {
     display: flex;
     background-color: rgb(231, 17, 17);
     justify-content: space-evenly;
@@ -151,10 +151,10 @@ img{
     }  
 
 }  */
-@media only screen AND ( max-height: 400px) {
+@media only screen AND ( max-height: 500px) {
 
     nav{ 
-        flex-direction: box;
+        flex-direction: column;
     }
   
 }
