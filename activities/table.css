@@ -1,9 +1,50 @@
 body{
-    background-color: rgb(175, 241, 236);
-
-    color: rgb(8, 54, 8);
-
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.schedule{
+    border: 3px solid #070707;
+    box-shadow: 3px 3px 3px  rgb(90, 81, 57);
+    caption-side: top;
+    border-spacing: 10px; 
+    padding: 20px;
+    border-collapse: collapse;
+}
+
+.schedule th, .schedule td {
+    border: solid rgba(65, 145, 65, 0.067);
+    background-color: rgba(119, 126, 235, 0.3);
+    vertical-align: middle;
+}
+
+.schedule thead {
+    background-color: rgba(231, 231, 46, 0.932);
+    color: #1f0303;
+}
+
+
+.schedule tbody {
+    background-color: rgb(245, 245, 245);
+}
+
+.schedule tfoot {
+    background-color: springgreen;
+    color:#610a0a
+}
+
+.schedule tr:nth-child(4) {
+    background-color: rgb(231, 231, 31);
+}
+
+main p:first-letter {
+    font-size:30px;
+    Color:red;
+}
+
+
+
+
+/*.schedule td {
+    border: thin solid #e01876;
+} */
 

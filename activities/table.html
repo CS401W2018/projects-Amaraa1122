@@ -10,48 +10,61 @@
     <header> 
         <h1> Web Design </h1>
     </header>
-
     
     <main>
-        <table border="5"> 
+        <h1> Tables </h1>
+        <table class="schedule">
+            <caption> Course Schedule </caption>
             <thead>
-                <tr> id ="total-credits" colspan = "5">Department</th>
+                <tr>
+                    <th> Department</th>
                     <th> Number </th>
+                    <th> Time </th>
                     <th> Location </th>
-                    <th> Chair </th>
                     <th> Credits </th>
-                    <th> Teacher </th>
                 </tr>
             </thead>
 
             <tbody>
+                <tr>
+                    <th colspan ="5"> Winter 2025 </th>
+                </tr>
                 <tr> 
-                    <td> CSS </td>
-                    <td rowspan="2"> 140 </td>
-                    <td> 11:00 - 11 : 50 AM </td>
-                    <td> P2 </td>
-                    <td header ="Total credits"> 3 </td>
-                    <td> Slade </td>
+                    <tr class = "odd">
+                        <td> CSS </td>
+                        <td>140 </td>
+                        <td>11:00-11:50AM</td>
+                        <td>P2</td>
+                        <td> 3 </td>
+                    </tr>
                 </tr>
 
 
                 <tr> 
-                    <td> CSS </td>
-                    <td> 140 </td>
-                    <td> 11:00 - 11 : 50 AM </td>
-                    <td> P2 </td>
-                    <td> 3 </td>
-                    <td> Who </td>
+                    <td>CSS</td>
+                    <td>140</td>
+                    <td>11:00-11:50AM</td>
+                    <td>P2</td>
+                    <td>3</td>  
                 </tr>
+
+                <tr> 
+                    <th colspan ="5"> Spring 2025 </th>
+                </tr>
+            
+                <tr>
+                    <td>CSS</td>
+                    <td>311</td>
+                    <td>2:00-4:00PM</td>
+                    <td>P2</td>
+                    <td>3</td>
+                </tr>
+            
+
             <tfoot>
                 <tr> 
-                    <th id ="total-credits" colspan = "5"> CSS </th>
-                    <td header ="total-credits"> CSS </td>
-                    <td> 311 </td>
-                    <td> 2:00 - 4:00 PM </td>
-                    <td> P2 </td>
-                    <td> 3 </td>
-                    <td> Who </td>
+                    <th colspan = "4" id= "total credits"> Total credits</th>
+                    <td header=" total-credits">9</td>
                 </tr>
             </tfoot>
 
@@ -65,19 +78,21 @@
         <p> When the table has complex data, and if need to merge rows or columns. </p>
         
         <h2> Engagement Table CSS </h2>
+        <ol>
         
-        <p> Why don't we use the border attribute?</p>
-        <p>      </p>
-        <p>What is the easiest way to color every other row a different color?</p>
-        <p> </p>
-
-
-
+        <li><p> Why don't we use the border attribute?</p>
+        <p>Using CSS for table borders is the modern, flexible, and maintainable approach.
+             The border attribute is outdated and should be avoided.</p> </li>
+        
+        <li> <p>What is the easiest way to color every other row a different color?</p>
+        <p> The easiest way to color every other row in a table is by using the 
+            CSS :nth-child() pseudo-class. It requires minimal 
+            code and automatically handles alternating rows.</p></li>
+        </ol>
+    
     </main>
     
-
-
-
+    
     <footer>
         <p> &copy; 2025 Mend-Amar Jargalsaikhan </p>
     </footer>
