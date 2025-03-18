@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Web Design</h1>
+    </header>
+
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+
+
+    <main>
+        <form action ="processing.html" method="post">
+            <div class= "form-row">
+                <input type="text" name="firstname" placeholder="ex:Taylor">
+            </div>   <br>
+            
+
+            <div class="form-row">
+                <label for = "email"> Email:</label>
+                <input type = "email" name = "email" value="amaraa@go.com" id = "email">
+            </div> <br>
+
+
+            <div>
+                <label for ="pass">Password</label>
+                <input type ="password" name="password" id="pass">
+            </div> <br>
+
+            <div>
+                <label for="state"> State:</label>
+                <select name="state" id="state">
+                    <option value ="CO">Colorado</option>
+                    <option value ="HI">Hawaii</option>
+                    <option value ="UT">Utah</option>
+                    <option value ="AL">Alabama</option>
+                    <option value ="AK">Alaska</option>
+                </select>
+            </div> <br>
+
+
+            <div>
+                <div> Year in school</div>
+                <label><input type = "radio" name ="year" value ="Freshman">Freshman</label>
+                <label><input type = "radio" name ="year" value ="Sophmore">Sophmore</label>
+            </div>
+
+
+            <div class = "form-row">
+                <input type ="submit">
+            </div>
+        </form>
+
+
+        <ul>
+            <li>
+                <p> The form tag has an "action" attribute. What does it do?</p>
+                <p>The action attribute in the form tag specifies the URL where the form's
+                 data should be sent when the form is submitted. </p>
+            </li>
+
+            <li>
+                <p> The form tag has a "method" attribute. What does it do? </p>
+                <p> The method attribute in the form tag specifies the HTTP 
+                    method used to send the form data to the server.</p>
+            </li>
+
+            <li>
+                <p>What is the difference between a "POST" and a "GET"?</p>
+                <p> If I use POST on the hmtl, other people can't see what i input into form from URL. 
+                    In contrast, if I use GET, anyone can see what I input into form through URL. </p>
+            </li>
+        </ul>
+    </main>
+
+
+    <footer>
+        <p> &copy;2025 Mend-Amar Jargalsaikhan
+    </footer>
+
+
+</body>
+</html>
