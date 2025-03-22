@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" href="mentalpro.css">
+</head>
+<body>
+    <header> 
+        <h1>Project-Forms</h1>
+    </header>
+
+
+    <main>
+        <form action ="processing.html" method="post">
+            <fieldset>
+                <legend>Personal Information </legend>
+                
+                <div class="myform">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id= "fullname" name="fullname" placeholder="for example: Steve Jobs">
+                </div> <br>
+
+
+                <div class="radio-row"> 
+                    <div class="form-spacer">Gender</div>
+                    <label for="male">
+                        <input type="radio" name="gender" id="male" value="male"> Male
+                    </label>
+
+                    <label for="female">
+                        <input type="radio" name="gender" id="female" value="female">Female
+                    </label>
+                </div>
+            </fieldset> <br>
+
+
+
+            <fieldset>
+                <legend>Account Information</legend>                
+                <div class="myform">
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" value="@gmail.com">
+                </div>
+                <br>
+
+
+                <div class="myform"> 
+                    <label for="pass">Password:</label>
+                    <input type="password" name="password" id= "pass" placeholder="password">
+                </div><br>
+
+
+                <div class="myform">
+                    <label for="phone-number">Phone Number: </label>
+                    <select name="phone-number" id="number"> 
+                    <option value="(+1)">+1</option>
+                    <option value ="(+976)">+976</option>
+                    <option value ="(+82)">+82</option>
+                    </select>
+                    <input type="text" id="phone-number" name="phone-number" placeholder="808...">
+                </div>
+            </fieldset> <br>
+
+            <fieldset>
+                <legend>Mental Health</legend>
+                <div class="radio-row">
+                    <div class="form-spacer"> Year in school:</div>
+                    <label><input type = "radio" name ="year" value ="Freshman">Freshman</label>
+                    <label><input type = "radio" name ="year" value ="Sophomore">Sophmore</label>
+                </div>  <br>
+
+                <div class="radio-row">
+                    <div class="form-spacer">Did you meet a psychologist?</div>
+                    <label><input type = "radio" name ="answer" value ="Yes">Yes</label>
+                    <label><input type = "radio" name ="answer" value ="No">No</label>
+                    <label><input type = "radio" name ="answer" value ="Maybe">Maybe</label>
+                </div>  <br>
+
+
+                <div class="radio-row">
+                    <div class="form-spacer">Do you use any medicine?</div>
+                    <label><input type = "radio" name ="answer" value ="Yes">Yes</label>
+                    <label><input type = "radio" name ="answer" value ="No">No</label>
+                </div> <br>
+
+
+
+                <div class ="radio-row">
+                    <div class="form-spacer">How are you feeling now?</div>
+                    <label><input type = "radio" name ="feeling" value ="Sad">Sad</label>
+                    <label><input type = "radio" name ="feeling" value ="Happy">Happy</label>
+                    <label><input type = "radio" name ="feeling" value ="Worried">Worried</label>
+                    <label><input type = "radio" name ="feeling" value ="Mad">Mad</label>
+                    <label><input type = "radio" name ="feeling" value ="Angry">Angry</label>
+                </div> <br>
+
+
+                <div class="radio-row">
+                    <div class="form-spacer"></div>
+                    <label><input type="checkbox" name= "agree" id = "agree" checked> Remember me </label>
+                </div> 
+            </fieldset>   <br>
+
+
+            <fieldset>
+                <div class="myform">
+                    <label for="comments"> Comments:</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+            </fieldset> <br>
+
+            
+            <div class="myform">
+                <input type="submit">
+            </div>
+
+
+        </form>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 Mend-Amar Jargalsaikhan</p>
+    </footer>
+
+
+    
+</body>
+</html>
+

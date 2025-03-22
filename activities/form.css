@@ -16,7 +16,7 @@ legend{
     padding: 20px;
 }
 
-.form-row input:not([type = "submit"]) {
+.form-row input:not([type ="submit"]) {
     padding: 5px;
     border-radius: 5px;
     background-color: rgb(241, 171, 171);

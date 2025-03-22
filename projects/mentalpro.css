@@ -1,0 +1,83 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(245, 165, 60);
+}
+
+header{
+    font-size: medium;
+}
+
+
+fieldset{
+    background-color: rgb(198, 243, 36);
+    padding: 20px;
+}
+
+legend{
+    background-color: rgb(209, 74, 243);
+    padding:10px;
+    color:rgb(55, 12, 155);
+}
+
+.myform input:not([type="submit"]){
+    background-color: rgb(255, 76, 186);
+    border-radius:5px;
+    padding: 7px;
+    
+}
+
+.myform input[type="submit"] {
+    padding: 5px;
+    background-color: rgb(20, 59, 110);
+    color:rgb(182, 247, 6);
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.myform {
+    display:flex;
+    gap:10px;
+    margin: 5px;
+}
+
+.radio-row{
+    display: flex;
+    gap:5px;
+    margin:6px 0;
+}
+
+.myform label{
+    width:200px;
+    text-align: right;
+}
+
+.form-spacer{
+    width: 200px;
+    text-align: right;
+}
+
+
+footer{
+    background-color: rgb(54, 248, 232);
+    padding: 3px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+
+@media ONLY screen and (max-width: 600px) {
+    .myform{
+        flex-direction: column;
+    }
+
+    .myform label {
+        text-align: left;
+    }
+
+    .form-specer {
+        text-align : left;
+    }
+}
+
+
