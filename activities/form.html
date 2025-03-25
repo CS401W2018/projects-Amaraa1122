@@ -11,28 +11,21 @@
         <h1>Web Design</h1>
     </header>
 
-    <nav>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-    </nav>
-
-    
     <main>
-        <form action ="processing.html" method="post">
+        <form action ="processing.html" method="post" id="myForm">
             <fieldset>
                 <legend> Account Information</legend>
             
             
             <div class= "form-row">
-                <label for="fullname"> Full Name:</label>
-               <input type="text" name="firstname" placeholder="Full name">
+                <label for="fullname">Full Name:</label>
+               <input type="text" name="fullname" placeholder="fullname">
             </div>   <br>
             
 
             <div class="form-row">
                 <label for="email"> Email:</label>
-                <input type="email" name="email" value="amaraa@go.com" id = "email">
+                <input type="email" name="email" value="amaraa@go.com" id="email">
             </div> <br>
 
 
@@ -54,26 +47,33 @@
             </div> <br>
 
 
+            <div class="form-row"> 
+
+
+            </div>
+
+
             <div class ="radio-row">
                 <div class="form-spacer"> Year in school:</div>
-                <label><input type = "radio" name ="year" value ="Freshman">Freshman</label>
-                <label><input type = "radio" name ="year" value ="Sophmore">Sophmore</label>
+                <label><input type="radio" name="year" value ="Freshman">Freshman</label>
+                <label><input type="radio" name="year" value ="Sophmore">Sophmore</label>
             </div>  <br>
 
             <div class="radio-row">
                 <div class="form-spacer"></div>
-                <label> <input type = "checkbox" name= "agree" id = "agree" checked> Remember me 
+                <label> <input type="checkbox" name="agree" id="agree" checked> Remember me 
                 </label>
             </div>
 
             <div class="form-row">
-                <label for = "comment"> Comments:</label>
-                <textarea name = "comments" id = "comments"></textarea>
+                <label for="comment"> Comments:</label>
+                <textarea name="comments" id="comments"></textarea>
 
             </div>
 
 
             <div class = "form-row">
+                <div class ="form-spacer"> </div>
                 <input type ="submit">
             </div>
             </fieldset>
@@ -100,22 +100,65 @@
                     In contrast, if I use GET, anyone can see what I input into form through URL. </p>
             </li>
 
-            <li>
-                <p> Engagement questions Mar19 </p>
-                <p> What are different ways to style your form</p>
-                <p> - We can work on the css and add some tags that fieldset, legend, and
-                    we can set class on the div tag. In the csss, we can for each classes. Also, 
-                    we can use media for the mobile screen view. </p>
-                <p>Why does the professor like to use flex?</p>
-                <p>- Because flex works good on mobile devices. It adjusts how looks page on the screen.</p>
+            
+
+            <li> 
+                <h3>Engagement-Form processing with JavaScript</h3>
+                <p>What is JavaScript? How did it get its name?</p>
+                <p>- JavaScript is an interpreted programming language used to create interactive and dynamic content on 
+                    websites. It allows developers to manipulate HTML and CSS,
+                     handle events, perform animations, and communicate with
+                      servers using APIs.</p>
+                <p>What are the two ways you can run JavaScript?</p>
+                <p>1. In the html, we can use script tag. In the DOM</p>
+                <p>2. We download and run node js.  </p>
+            
+                <p>What was the most popular front-end js library?</p>
+                <p>- JQuery  </p>
+                <p>What is the most popular front-end js library today?</p>
+                <p> React.js is the most popular front-end js library today. </p>
             </li>
         </ul>
     </main>
 
 
     <footer>
-        <p> &copy;2025 Mend-Amar Jargalsaikhan
+        <p> &copy;2025 Mend-Amar Jargalsaikhan </p>
     </footer>
+
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event){
+            event.preventDefault();
+            alert("Form Submitted");   
+
+            const fullname=document.getElementById('fullname').value;
+            const email=document.getElementById('email').value;
+            const pass=document.getElementById('pass').value;
+
+
+            if(!fullname) {
+                alert("You neee to enter your name");
+                return;
+            }
+
+
+            if (!age || age<18) {
+                alert("You need to be 18.");
+                return;
+            }
+
+
+            const formData = {
+                fullname: fullname,
+                email: email,
+                password: pass
+            };
+
+            console.log(formData);
+        });    
+    </script
+
 
 
 </body>
