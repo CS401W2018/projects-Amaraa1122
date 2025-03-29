@@ -12,6 +12,7 @@
     </header>
 
     <main>
+        <div id="message"></div>
         <form action ="processing.html" method="post" id="myForm">
             <fieldset>
                 <legend> Account Information</legend>
@@ -19,7 +20,7 @@
             
             <div class= "form-row">
                 <label for="fullname">Full Name:</label>
-               <input type="text" name="fullname" placeholder="fullname">
+               <input type="text" name="fullname" placeholder="fullname" id="fullname" >
             </div>   <br>
             
 
@@ -35,9 +36,16 @@
             </div> <br>
 
             <div class="form-row">
+                <label for="age">Age:</label>
+                <input type ="number" name="age" id="age">
+            </div> <br>
+
+
+
+            <div class="form-row">
                 <label for="state">State:</label>
                 <select name="state" id="state">
-                    <option value="blank"></option>
+                    <option value="blank" disabled selected>Make selection</option>
                     <option value ="CO">Colorado</option>
                     <option value ="HI">Hawaii</option>
                     <option value ="UT">Utah</option>
@@ -45,12 +53,6 @@
                     <option value ="AK">Alaska</option>
                 </select>
             </div> <br>
-
-
-            <div class="form-row"> 
-
-
-            </div>
 
 
             <div class ="radio-row">
@@ -74,92 +76,30 @@
 
             <div class = "form-row">
                 <div class ="form-spacer"> </div>
-                <input type ="submit">
+                <input type ="submit" id="submit">
             </div>
             </fieldset>
         </form>
 
 
         <ul>
-            <li>
-                <p> The form tag has an "action" attribute. What does it do?</p>
-                <p>The action attribute in the form tag specifies the URL where the form's
-                 data should be sent when the form is submitted. </p>
-            </li>
-
-            <li>
-                <p> The form tag has a "method" attribute. What does it do? </p>
-                <p> The method attribute in the form tag specifies the HTTP 
-                    method used to send the form data to the server.</p>
-
-            </li>
-
-            <li>
-                <p>What is the difference between a "POST" and a "GET"?</p>
-                <p> If I use POST on the hmtl, other people can't see what i input into form from URL. 
-                    In contrast, if I use GET, anyone can see what I input into form through URL. </p>
-            </li>
-
-            
-
             <li> 
-                <h3>Engagement-Form processing with JavaScript</h3>
-                <p>What is JavaScript? How did it get its name?</p>
-                <p>- JavaScript is an interpreted programming language used to create interactive and dynamic content on 
-                    websites. It allows developers to manipulate HTML and CSS,
-                     handle events, perform animations, and communicate with
-                      servers using APIs.</p>
-                <p>What are the two ways you can run JavaScript?</p>
-                <p>1. In the html, we can use script tag. In the DOM</p>
-                <p>2. We download and run node js.  </p>
-            
-                <p>What was the most popular front-end js library?</p>
-                <p>- JQuery  </p>
-                <p>What is the most popular front-end js library today?</p>
-                <p> React.js is the most popular front-end js library today. </p>
+                <h3>Engagement - Form Processing with AJAX </h3>
+                <p>What is AJAX?</p>
+                <p> AJAX is a web development technique for creating dynamic
+                     and interactive web applications. </p>
+
+                <p> Why do you put your JS Code in a separate file? </p>
+                <p>It could help our form load faster, we might use this js on another page in our websites 
+                    and we can store it in teh separate files.     </p>
             </li>
         </ul>
     </main>
 
-
     <footer>
-        <p> &copy;2025 Mend-Amar Jargalsaikhan </p>
+        <p> &copy; 2025 Mend-Amar Jargalsaikhan </p>
     </footer>
-
-
-    <script>
-        document.getElementById('myForm').addEventListener('submit', function(event){
-            event.preventDefault();
-            alert("Form Submitted");   
-
-            const fullname=document.getElementById('fullname').value;
-            const email=document.getElementById('email').value;
-            const pass=document.getElementById('pass').value;
-
-
-            if(!fullname) {
-                alert("You neee to enter your name");
-                return;
-            }
-
-
-            if (!age || age<18) {
-                alert("You need to be 18.");
-                return;
-            }
-
-
-            const formData = {
-                fullname: fullname,
-                email: email,
-                password: pass
-            };
-
-            console.log(formData);
-        });    
-    </script
-
-
-
+    <script src="form.js"></script>
+        
 </body>
 </html>
