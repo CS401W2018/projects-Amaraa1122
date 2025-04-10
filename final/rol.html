@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+<body>
+    <header>
+        <h1>What Changed My Life? </h1>
+        <h2> Role Model</h2>
+    </header>
+
+    <nav>
+        <a href="final.html">Home</a>
+        <a href="religion.html">Religion</a>
+        <a href="film.html">A film</a>
+        <a href="rol.html">Role Model</a>
+        <a href="#">Collage</a>
+        <a href="#">Form</a> 
+    </nav>
+
+
+    <main>
+        <div class="sabrina">
+            <img src="sabrina.jpg" alt="sabrina image">
+            <h4>Audrey Hepburn</h4>
+        </div>
+
+        <div class="sabrina2">
+        <h2>Audrey Hepburn</h2>
+        <p>I think, almost all contents inluded my childhood and memories.
+                This is one of them. When I was child, I watched "Sabrina". 
+            The main actor was so beautiful and kind. I just wondered how she beautiful.
+        I wanted to be like her. She wasn't only actor. She was volunteer of Unicef. She worked in Africe. Everybody have 
+        role model in thier lives. Please fill this form. </p>
+        </div>
+
+
+    
+
+        <div id="message"></div>
+        <form action ="processing.html" method="post" id="myForm">
+            <fieldset>
+                <legend>Information</legend>
+
+                <div class = "myform">
+                    <label for ="fullname">Full Name:</label>
+                    <input type="text" name="fullname" placeholder="fullname" id="fullname" >
+                </div>  <br> 
+
+    
+                <div class="myform"> 
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder ="@gmail.com" id="email">
+                </div> <br>
+
+                <div class ="myform">
+                    <label for="pass">Password:</label>
+                    <input type ="password" name="password" id="pass">
+                </div> <br>
+
+                <div class = "myform">
+                    <label for="age">Age:</label>
+                    <input type ="number" name="age" id="age">
+                </div> <br>
+
+                <div class="row"> 
+                    <div class="form-spacer">Gender:</div>
+                    <label for="male">
+                        <input type="radio" name="gender" id="male" value="male"> Male
+                    </label>
+
+                    <label for="female">
+                        <input type="radio" name="gender" id="female" value="female">Female
+                    </label>
+                </div><br>
+        
+            
+                <div class="myform">
+                    <label for="country">Country:</label>
+                    <select name="country" id="country">
+                        <option value="blank" disabled selected>select</option>
+                        <option value ="MNG">Mongolia</option>
+                        <option value ="AUS">Australia</option>
+                        <option value ="ARG">ARGENTINA</option>
+                        <option value ="HOKO">HONG KONG</option>
+                        <option value ="IDSA">INDONESIA</option>
+                        <option value ="USA">United States</option>
+                        <option value ="CAN">Canada</option>
+                        <option value ="BRZL">BRAZIL</option> 
+                        <option value ="CBDA">CAMBODIA</option>  
+                        <option value ="CHIN">CHINA</option>  
+                        <option value ="FIJI">FIJI</option>  
+                        <option value ="ENG">England</option>  
+                    </select>
+                </div> <br>
+
+
+                <div class ="myform">
+                    <label for="phonenumber">Phone Number:</label>
+                    <select name="phone-number" id="number"> 
+                    <option value="(+1)">+1</option>
+                    <option value ="(+976)">+976</option>
+                    <option value ="(+82)">+82</option>
+                    </select>
+                    <input type="text" id="phonenumber" name="phonenumber" placeholder="808...">
+                </div> <br>
+            </fieldset> <br>
+
+            <fieldset>
+                <legend>Role Model</legend>
+                <div class="row">
+                    <div class="form-spacer">Do you have role model in your life?</div>
+                    <label><input type = "radio" name ="answer" value ="Yes">Yes</label>
+                    <label><input type = "radio" name ="answer" value ="No">No</label>
+                    <label><input type = "radio" name ="answer" value ="Maybe">Maybe</label>
+                </div>  <br>
+
+                <div class ="row">
+                    <div class="form-spacer">Is she/he gives you motivation?</div>
+                    <label><input type = "radio" name ="feeling" value ="Y">Yes</label>
+                    <label><input type = "radio" name ="feeling" value ="N">No</label>
+                    <label><input type = "radio" name ="feeling" value ="Un">Didn't notice</label>
+                </div> <br>
+
+                <div class="myform">
+                    <label for="who">Who is your role model:</label>
+                    <select name="who" id="who">
+                        <option value="blank" disabled selected>select</option>
+                        <option value ="te">Teacher</option>
+                        <option value ="fr">Friend</option>
+                        <option value ="ce">Celebrity</option>
+                        <option value ="Pa">Parents</option>
+                        <option value ="sp">Siblings</option>
+                        <option value ="co">Colleagues</option>
+                        <option value ="gp">Grandparents</option>
+                        <option value ="ot">Others</option>
+                        <option value ="no">No one</option>
+                    </select>
+                </div> <br>
+
+
+                <div class="row">
+                    <div class="form-spacer"></div>
+                    <label><input type="checkbox" name="agree" id="agree" checked> Remember me </label>
+                </div>
+            </fieldset> <br> 
+            
+
+            <fieldset>
+                <div class="myform">
+                    <label for="comments"> Comments:</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+            </fieldset> <br>
+
+
+            <div class="myform">
+                <input type="submit" id="submit">
+            </div>
+        </form> <br>
+    </main>
+
+
+    <footer> 
+        <p>&copy; 2025 Mend-Amar Jargalsaikhan</p>
+    </footer>
+    <script src ="rol.js"></script>
+    
+</body>
+</html>

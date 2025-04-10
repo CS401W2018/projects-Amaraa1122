@@ -109,11 +109,90 @@ img{
 
 
  .film{
-    img {
-        width: 250px;
-        padding: 30PX;
-        float: RIGHT; 
-    
-    }
+    width:250px;
+    padding: 30px;
+    float: left;
+    margin-top: 40px;
  }
 
+
+ .sabrina{
+    width: 200px;
+    padding: 30px;
+    float: RIGHT; 
+    margin-top: -40px;
+ }
+
+ .sabrina2 {
+    text-align: center;
+    margin-top: 40px;
+    padding-left: 40px;;
+ }
+
+
+
+
+fieldset{
+    background-color: rgb(196, 238, 42);
+    padding: 10px;  
+}
+
+legend{
+    background-color: rgb(123, 209, 205);
+    padding: 10px;
+    color:rgb(22, 8, 54);
+}
+
+.myform input:not([type="submit"]){
+    background-color: rgb(221, 124, 184);
+    border-radius:5px;
+    padding: 7px;
+    
+}
+
+.myform input[type="submit"] {
+    padding: 5px;
+    background-color: rgb(20, 59, 110);
+    color:rgb(250, 143, 175);
+    font-size: 20px;
+    text-align: center;
+}
+
+.myform {
+    display:flex;
+    gap:10px;
+    margin: 5px;
+}
+
+.row{
+    display: flex;
+    gap:5px;
+    margin:6px 0;
+}
+
+
+
+.myform label{
+    width:200px;
+    text-align: right;
+}
+
+.form-spacer{
+    width: 200px;
+    text-align: right;
+}
+
+
+@media ONLY screen and (max-width: 600px) {
+    .myform{
+        flex-direction: column;
+    }
+
+    .myform label {
+        text-align: left;
+    }
+
+    .form-specer {
+        text-align : left;
+    }
+}
