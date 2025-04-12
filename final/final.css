@@ -3,21 +3,29 @@ body {
     background-color: rgb(154, 71, 231);
 }
 
-
-nav{
+nav {
     display: flex;
-    background: rgb(12, 102, 12);
+    background-color: rgb(12, 102, 12);
     color:white;
     justify-content: space-evenly;
     margin-top: -15px;
+    margin:0px;   
 }
 
 nav a {
+    background-color: rgb(15, 209, 112);
     color: white;
+    justify-content: space-evenly;
+    padding: 10px 10px;
+    font-weight: bold;
 }
-nav a:hover{
-    color:aqua;
+
+nav a.current{
+    color: red;
 }
+
+
+
 
 .container {
     display: grid;
@@ -83,7 +91,7 @@ img{
     text-align: center;;
 }
 
-.big thead {
+.big thead{
     background-color: rgb(9, 248, 168);
 }
 .big tbody {
@@ -96,38 +104,108 @@ img{
 
 
 
-.huvaah {
-    display: grid;
-    grid-template-columns: 4fr 4fr ;
-}
-.miss {
+
+
+/* .miss {
     width: 350px;
     padding: 30px;
     float: right;
     margin-top: 20px;
+} */
+
+/* religion page css here*/
+.miss {
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 900px;
+}
+.miss-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
+.miss-img {
+    width: 350px;
+    max-width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
 
- .film{
-    width:250px;
-    padding: 30px;
-    float: left;
-    margin-top: 40px;
- }
+.miss-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+/*religion page */
 
 
- .sabrina{
+
+/* fil page here */
+.film-container {
+    display: flex;
+    align-items: flex-start;
+    border: 2px solid #ccc;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #fff;
+    margin: 2rem auto;
+    max-width: 900px;
+    gap: 1.5rem;
+  }
+  
+  .film-image img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .film-text {
+    flex: 1;
+  }
+  
+  .film-text h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .film-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+/*  rol model page here rol.html -> these are for the form. */
+.role-model-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    margin-top: 30px;
+    color: rgb(196, 238, 42);
+
+  }
+
+  .role-model-box img {
     width: 200px;
-    padding: 30px;
-    float: RIGHT; 
-    margin-top: -40px;
- }
+    height: auto;
+    border-radius: 10px;
+    margin-right: 1rem;
+  }
+  
+  .role-model-text {
+    flex: 1;
+  }
+  
+  .role-model-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
 
- .sabrina2 {
-    text-align: center;
-    margin-top: 40px;
-    padding-left: 40px;;
- }
+/* role model page */
 
 
 
@@ -152,7 +230,7 @@ legend{
 
 .myform input[type="submit"] {
     padding: 5px;
-    background-color: rgb(20, 59, 110);
+    background-color: rgb(18, 62, 119);
     color:rgb(250, 143, 175);
     font-size: 20px;
     text-align: center;
@@ -161,7 +239,7 @@ legend{
 .myform {
     display:flex;
     gap:10px;
-    margin: 5px;
+    margin:5px;
 }
 
 .row{
@@ -182,8 +260,72 @@ legend{
     text-align: right;
 }
 
+/*College page*/
 
-@media ONLY screen and (max-width: 600px) {
+.university {
+    display: flex;
+    align-items: flex-start;
+    border: 2px solid #bd3030;
+    padding: 16px;
+    margin: 16px auto;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.university img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.university div {
+    flex: 1;
+}
+
+
+
+
+
+/*  music page */
+video {
+    width: 550px;
+}
+
+.mu {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+@media ONLY screen and (max-width: 500px) {
+    nav {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+       padding: 10px 0px;
+    }
+
+    nav a {
+        display: block;
+        width:100%;
+        text-align: center;
+        padding:10px 0;
+    }
+
+    .myform {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    
+    .myform select,
+    .myform input,
+    .myform textarea {
+        max-width: 300px;
+    }
+
+   
     .myform{
         flex-direction: column;
     }
@@ -195,4 +337,51 @@ legend{
     .form-specer {
         text-align : left;
     }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    /* college page */
+    .university {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .university img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .miss {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .miss img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+
+    /* film page */
+    .film-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .film-image img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .film-text {
+    text-align: center;
+  }
+
+
+
+    
 }

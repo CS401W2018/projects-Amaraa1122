@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design</title>
+    <link rel="stylesheet" href="final.css"> 
+</head>
+<body>
+    <header>
+        <h1>What Changed My Life? </h1>
+        <h2>College</h2>
+    </header>
+
+    <nav>
+        <a  href="final.html">Home</a>
+        <a href="religion.html">Religion</a>
+        <a href="film.html">A film</a>
+        <a href="rol.html">Role Model</a>
+        <a href="college.html">College</a>
+        <a href="music.html">Music</a> 
+    </nav>
+
+    <main>
+        <div class="university">
+            <img src="byuh.png" alt="BYUH image">
+            <div>
+                <h3>I'm student at BYU-Hawaii</h3>
+                <p>I study at Brigham-Young Unversity Hawaii. This is my second year. I'm majoring in IT. College life 
+                    changes 5 years of my life. I learning many things in here. I included facts of top 4 Unversity in United States. If you want read more, please
+                click the link below. </p>
+            </div>
+        </div>
+
+        <div class="university">
+            <img src="harvard.png" alt="Harvard image">
+            <div>
+                <h3>Harvard</h3>
+                <p>Harvard Unversity is the private university. It is founded 17th century. There are over 180 countries student.
+                    Also, may different majors. For example, law, business, computer science, etc. They have online classes with +35
+                    million students.
+                </p>
+            </div>
+        </div>
+
+       
+        <div class="university">
+            <img src="princeton.png" alt="Princeton image">
+            <div>
+                <h3>Princeton</h3>
+                <p>Princeton University founded in 1746. Located in New Jersey. There are over 8300 stundets.</p>
+            </div>
+        </div>
+
+
+        
+
+        <div class="university">
+            <img src="stanford.png" alt="Stanford image">
+            <div>
+                <h3>Stanford</h3>
+                <p>Stanford University founded 1885 by Leland. One of the best university.
+                    It is located in Palo, California. There are over 15000 students.</p>
+            </div>
+        </div>
+
+
+        
+
+        <div class="university">
+            <img src="yale.png" alt="Yale image">
+            <div>
+                <h3>Yale</h3>
+                <p>Yale University located in New Haven. It is founded in 1701.
+                 It is included 14 schools. For example; law, medicine, divinity, etc.
+                 Students from more than 120 countries.</p>
+            </div>
+        </div>
+
+
+    </main>
+    
+
+    <footer>
+        <p> More informations from here:</p>
+        <div id="schools">
+        <a href="https://www.byuh.edu/">BYUH</a>
+        <a href="https://www.harvard.edu/">Harvard</a>
+        <a href="https://www.princeton.edu/">Princeton</a>
+        <a href="https://www.stanford.edu/">Stanford </a>
+        <a href="https://www.yale.edu/">Yale</a>
+        </div>
+        <p>&copy; 2025 Mend-Amar Jargalsaikhan</p>
+    </footer>
+
+
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script>
+        $(function(){
+        $('a').each(function() {
+            if ($(this).prop('href') == window.location.href) {
+            $(this).addClass('current');
+            }
+        });
+        });
+    </script>
+</body>
+</html>

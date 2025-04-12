@@ -17,27 +17,30 @@
         <a href="religion.html">Religion</a>
         <a href="film.html">A film</a>
         <a href="rol.html">Role Model</a>
-        <a href="#">Collage</a>
-        <a href="#">Form</a> 
+        <a href="college.html">Collage</a>
+        <a href="music.html">Music</a> 
     </nav>
 
     <main>
-        <div class="huvaah">
-        <div class="miss"> 
-            <img src = "mis.jpg" alt = "I saw blue eyes" class="mis">
+        
+        <div class="miss">
+            <div class="miss-container">
+                <img src="mis.jpg" alt="I saw blue eyes" class="miss-img">
+                <div class="miss-text">
+                    <h2>Story</h2>
+                    <p>I'm Christian. This religion changed my life so wonderfully.
+                        When I was 4 years old, my family joined The Church of Jesus Christ of Latter-day Saints.
+                        I saw the changes come to my life through religion. It was nice to see my mom and grandma
+                        always smiling. I felt true happiness. In this picture, I met American missionaries, and I saw people
+                        with blue eyes for the first time. I thought one of them was Jack from Titanic! They were the kindest
+                        people who came to my home. I'm so grateful to them and to my religion. In the world, there are
+                        four major religions: Christianity, Islam, Buddhism, and Hinduism.
+                        I attached a table of religions — it might be interesting for you. What religion are you?
+                    </p>
+                </div>
+            </div>
         </div>
-
-        <div>
-            <h2>Story</h2>
-            <p> I'm Christian. This religion changed my life so wonderfully.
-                When I was 4years old, my family joined to The Church of Jesus Christ of Latter Day-Saints. I saw the changes came to my life through
-                religion. It was nice to see my mom and grandma smiled always. I felt true happiness. In this picture, I met American missionaries and I saw people
-                 with blue eyes the first time. I thought, one of them was Jack from Titanic. They were the most kind people from who came to my home. I'm so greatful to them and my religion.
-                 In the world, there are 4 big religions. They are Christianity, Islam, Buddhism, and Hinduism.
-                 I attached the table of religions and it might be interesting for you. What religion are you?
-            </p>
-        </div>
-        </div>
+        
 
 
         <div> 
@@ -98,18 +101,25 @@
 
         </div>
 
-
     </main>
-
-
-
 
     <footer> 
         <p>&copy; 2025 Mend-Amar Jargalsaikhan</p>
+        <p>If you want to read about religions <a href="https://en.wikipedia.org/wiki/Religion">click</a> here.</p>
+        <p>If you want to read about The Church of Jesus Christ of Latter Day Saints <a href="https://www.churchofjesuschrist.org/?lang=eng" >click</a> here.</p>
     </footer>
 
-    <p>If you want to read about religions <a href="https://en.wikipedia.org/wiki/Religion">click</a> here.</p>
-    <p>If you want to read about The Church of Jesus Christ of Latter Day Saints <a href="https://www.churchofjesuschrist.org/?lang=eng" >click</a> here.</p>
+    
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script>
+        $(function(){
+        $('a').each(function() {
+            if ($(this).prop('href') == window.location.href) {
+            $(this).addClass('current');
+            }
+        });
+        });
+    </script>
     
 </body>
 </html>

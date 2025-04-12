@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="final.css">
+    
 </head>
 <body>
     <header>
@@ -17,34 +18,33 @@
         <a href="religion.html">Religion</a>
         <a href="film.html">A film</a>
         <a href="rol.html">Role Model</a>
-        <a href="#">Collage</a>
-        <a href="#">Form</a> 
+        <a href="college.html">College</a>
+        <a href="music.html">Form</a> 
     </nav>
 
 
     <main>
-        <div class="sabrina">
-            <img src="sabrina.jpg" alt="sabrina image">
-            <h4>Audrey Hepburn</h4>
+        <div class="role-model-box">
+            <img src="roman.png" alt="Audrey Hepburn">
+            <div class="role-model-text">
+              <h3>Audrey Hepburn</h3>
+              <p>
+                When I was a child, I watched "Sabrina". Audrey Hepburn, the main actress, was so beautiful and kind. 
+                Later I learned she worked with UNICEF and helped children in Africa. 
+                She inspired me deeply and became my role model.
+              </p>
+            </div>
         </div>
-
-        <div class="sabrina2">
-        <h2>Audrey Hepburn</h2>
-        <p>I think, almost all contents inluded my childhood and memories.
-                This is one of them. When I was child, I watched "Sabrina". 
-            The main actor was so beautiful and kind. I just wondered how she beautiful.
-        I wanted to be like her. She wasn't only actor. She was volunteer of Unicef. She worked in Africe. Everybody have 
-        role model in thier lives. Please fill this form. </p>
-        </div>
-
-
-    
+        
+        
+        
 
         <div id="message"></div>
         <form action ="processing.html" method="post" id="myForm">
             <fieldset>
                 <legend>Information</legend>
 
+                
                 <div class = "myform">
                     <label for ="fullname">Full Name:</label>
                     <input type="text" name="fullname" placeholder="fullname" id="fullname" >
@@ -100,7 +100,7 @@
 
                 <div class ="myform">
                     <label for="phonenumber">Phone Number:</label>
-                    <select name="phone-number" id="number"> 
+                    <select name="phonenumber" id="countrycode"> 
                     <option value="(+1)">+1</option>
                     <option value ="(+976)">+976</option>
                     <option value ="(+82)">+82</option>
@@ -165,9 +165,20 @@
 
 
     <footer> 
+        <p>If you want to read about a picture on the top <a href="https://www.latimes.com/entertainment/envelope/la-xpm-2013-dec-12-la-et-mn-oscar-archives-audrey-hepburn-roman-holiday-20131212-story.html">Click</a> here.</p>
         <p>&copy; 2025 Mend-Amar Jargalsaikhan</p>
     </footer>
     <script src ="rol.js"></script>
-    
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script>
+        $(function(){
+        $('a').each(function() {
+            if ($(this).prop('href') == window.location.href) {
+            $(this).addClass('current');
+            }
+        });
+        });
+    </script>
+
 </body>
 </html>

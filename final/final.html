@@ -17,19 +17,21 @@
         <a href="religion.html">Religion</a>
         <a href="film.html">A film</a>
         <a href="rol.html">Role Model</a>
-        <a href="#">Collage</a>
-        <a href="#">Form</a> 
+        <a href="college.html">College</a>
+        <a href="music.html">Music</a> 
     </nav>
 
 
     <div class="container">
         <aside class="left">
-            <h2>Description</h2>
+            <h2>Introduction.</h2>
             <figure><img src="intro.jpg" alt="For home page description"></figure>
             <ul>
                 <li>What makes you happy? What changes your life? </li>
-    
-    
+                <li> I hope this page will be interesting for you.
+                    Also, each page will be different. I wanted to give you a good experience.
+                 </li>
+
             </ul>
         </aside>
         
@@ -72,7 +74,7 @@
             <div class="child"> 
                 <article>
                     <img src="form.jpg" alt="form card image">
-                    <h2>Form</h2>
+                    <h2>Music</h2>
                     <p>Do you want to fill form?</p>
                 </article>
             </div>
@@ -86,6 +88,15 @@
         <p>&copy; 2025 Mend-Amar Jargalsaikhan</p>
     </footer>
 
-    
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script>
+        $(function(){
+        $('a').each(function() {
+            if ($(this).prop('href') == window.location.href) {
+            $(this).addClass('current');
+            }
+        });
+        });
+    </script>
 </body>
 </html>
